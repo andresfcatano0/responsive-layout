@@ -1,0 +1,83 @@
+body {
+	margin: auto 0;
+}
+
+.area {
+	cursor: pointer;
+	font-size: 2em;
+	border-radius: 4px; /*Rounds corners*/
+	border: 1px solid #bbb;
+}
+
+/*Nav bar*/
+.stick {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav {
+	background-color: blue;
+	display: flex;
+	list-style: none; /*removes pesky list dots*/
+	font-size: 0.7em;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+	.main-nav{
+		font-size: 0.5em;
+		padding: 0;
+	}
+}
+
+.push {
+	margin-left: auto;
+}
+
+li {
+	padding: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none; /*removes underlines*/
+}
+
+/*Cover*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+
+.cover {
+	width: 30rem;
+}
+
+/*Cover*/
+.grid-wrapper {
+		background-color: purple;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+	width: 100%;
+}
+
+.box {
+ 	background-color: grey;
+ 	padding: 130px;
+ 	margin: 20px;
+ }
+
+/*footer*/
+footer {
+	background-color: blue;
+	text-align: center;
+	color: white;
+}
+
